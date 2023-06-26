@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 10</title>
+</head>
+<body>
+
+  <script>
+    let limit = prompt("Enter limit of array");
+    let a = [];
+    let b = [];
+    let temp;
+
+    for(let i=0;i<limit;i++){
+      a[i] = prompt("Enter array A value");       
+    }
+
+    for(let i=0;i<limit;i++){
+      b[i] = prompt("Enter array B value");       
+    }
+
+    for(let i=0;i<limit;i++){
+      temp = a[i];
+      a[i] = b[i];
+      b[i] = temp;
+    }
+    
+    document.write("Value of Array A:","<br>");    
+    for(let i=0;i<limit;i++){
+      document.write(a[i],"<br>");      
+    }       
+
+    document.write("Value of Array B:","<br>");    
+    for(let i=0;i<limit;i++){
+      document.write(b[i],"<br>");      
+    }
+  </script>
+  
+</body>
+</html>

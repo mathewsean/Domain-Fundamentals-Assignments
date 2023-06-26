@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 25</title>
+</head>
+<body>
+  <script>
+   
+var library = [ 
+    {
+        title: 'Bill Gates',
+        author: 'The Road Ahead',
+        readingStatus: true
+    },
+    {
+        title: 'Steve Jobs',
+        author: 'Walter Isaacson',
+        readingStatus: true
+    },
+    {
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        author: 'Suzanne Collins',
+        readingStatus: false
+    }
+];
+for(i=0;i<library.length;i++){
+    if(library[i].readingStatus==true){
+  document.write("Already read: Book Name - " + library[i].title +" by: "+ library[i].author);
+  document.write("<br>")
+}
+
+else if(library[i].readingStatus==false) {
+  document.write("You still need to read: Book Name - " + library[i].title +" by: "+ library[i].author);
+  document.write("<br>")
+}
+
+}
+</script>
+  
+</body>
+</html>

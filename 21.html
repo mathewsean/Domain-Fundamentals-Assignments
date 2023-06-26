@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 21</title>
+</head>
+<body>
+  <script>
+
+    let a = [];
+    let b = [];
+    let limit = prompt("Enter Limit of Array");
+
+    for(let i=0;i<limit;i++){
+      a[i] = prompt("Enter the value of array");
+    }
+
+    for(let i=0;i<limit-1;i++){
+      b[i]=a[i]*a[i+1];
+      document.write(b[i] + "  ");
+    }
+
+  </script>  
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignmnet 17</title>
+</head>
+<body>
+  <script>
+    function addition(){
+      let result = Number(num1) + Number(num2);
+      document.write("Your Result is "+ result) 
+    }
+
+    function substraction(){
+      let result = num1 - num2;
+      document.write("Your Result is "+ result)
+    }
+
+    function multiplication(){
+      let result = num1 * num2;
+      document.write("Your Result is "+ result)
+    }
+
+    function division(){
+      let result = num1/num2;
+      document.write("Your Result is "+ result)
+    }
+
+    let menu = prompt("Enter your function - 1 for addition, 2 for substraction, 3 for multiplication, 4 for division");
+    let num1 = prompt("Enter First Value");
+    let num2 = prompt("Enter Second Value");
+
+    if (menu==1){
+      addition();
+    }
+    else if (menu==2){
+      substraction();
+    }
+    else if (menu==3){
+      multiplication();
+    }
+    else if (menu==4){
+      division();
+    }
+    else{
+      document.write("Invalid Entry");
+    }
+
+  </script>
+</body>
+</html>

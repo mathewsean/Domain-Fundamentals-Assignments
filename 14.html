@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 14</title>
+</head>
+<body>
+  <script>
+    let limit = prompt("Enter the limit of array");
+    let a = [];
+    let b = [];
+
+    for(let i=0; i<limit; i++){
+      a[i]=[];
+      for(let j=0; j<limit; j++){
+        a[i][j] = prompt("Enter values of array 1");
+      }
+    }
+    console.log(a);
+    
+    for(let i=0; i<limit; i++){
+      b[i]=[];
+      for(let j=0; j<limit; j++){
+        b[i][j] = prompt("Enter values of array 2");
+      }
+    }
+    console.log(b);
+
+    for(let i=0; i<limit; i++){
+      for(let j=0; j<limit; j++){
+        let sum = Number(a[i][j]) + Number(b[i][j]);
+        document.write(sum + " ");        
+      }
+      document.write("<br>")      
+    }
+
+  </script>
+</body>
+</html>

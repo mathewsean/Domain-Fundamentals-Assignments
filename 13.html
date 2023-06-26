@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 13</title>
+</head>
+<body>
+  <script>
+    let word=prompt("Enter your word to check:");
+    word.split('')
+    let flag = 0;
+
+    for(i=0;i<word.length/2;i++){
+      if (word[i]!=word[word.length-i-1]){
+        flag = 1;
+        break;                
+      }      
+    }
+    
+    if(flag==1){
+      document.write(word + " not is a palindrome","<br>");
+    }
+    else{
+      document.write(word + " is a palindrome","<br>");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 22</title>
+</head>
+<body>
+  <script>
+
+    let limit = prompt("Enter your array limit");    
+    let a = [];
+    let b = [];
+    let c = [];   
+
+    function getArray(){  
+                
+      for(let i=0; i<limit; i++){ 
+        a[i] = [];       
+        for(let j=0; j<limit; j++){
+          a[i][j] = prompt("Enter Values of Array 1")                    
+        }
+      }
+
+      
+      for(let i=0; i<limit; i++){ 
+        b[i] = [];       
+        for(let j=0; j<limit; j++){
+          b[i][j] = prompt("Enter Values of Array 2")                  
+        }
+      }
+    }
+
+    function addArray(){    
+      
+      for(let i=0; i<limit; i++){ 
+        c[i] = [];                         
+        for(let j=0; j<limit; j++){
+          c[i][j] = parseInt(a[i][j]) + parseInt(b[i][j]);          
+        }        
+      }
+    }
+     
+    function displayArray(){       
+      
+      for(let i=0; i<limit; i++){             
+        for(let j=0; j<limit; j++){
+          document.write(c[i][j] + " ");
+        }
+        document.write("<br>");
+      }
+    }
+
+    getArray();
+    addArray();
+    displayArray();
+
+  </script>  
+</body>
+</html>

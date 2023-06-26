@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 23</title>
+</head>
+<body>
+  <script>
+    let limit = prompt("Enter limit of Array");
+    let a = [];
+
+    function getArray(){
+      for(let i=0; i<limit; i++){
+        a[i] = [];
+        for(let j=0; j<limit; j++){
+          a[i][j] = prompt("Enter your array values");
+        }
+      }
+    }
+
+    function displayArray(){
+      document.write("Array Elements are:<br>");
+      for(let i=0; i<limit; i++){
+        for(let j=0; j<limit; j++){
+          document.write(a[i][j] + " ");
+        }
+        document.write("<br>");
+      }
+    }
+
+    getArray();
+    displayArray();
+    
+  </script> 
+</body>
+</html>

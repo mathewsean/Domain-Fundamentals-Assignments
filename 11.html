@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 11</title>
+</head>
+<body>
+  
+  <script>
+    let limit = prompt("Enter the limit of array");
+    let a = [];
+    let count = 0;
+
+    for(let i=0;i<limit;i++){
+      a[i] = prompt("Enter the value of Array");
+    }
+
+    for(let i=0;i<limit;i++){
+      if(a[i]%2==0){
+        count=count+1;
+      }    
+   }
+   document.write("Number of even numbers in the given array is "+count);
+   
+  </script>
+</body>
+</html>

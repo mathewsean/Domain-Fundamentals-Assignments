@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 24</title>
+</head>
+<body>
+
+  <script>
+    class Area {
+
+      circle(r) {
+        let A = 3.14 * (r*r);
+        document.write("Circle Area is " + A);       
+      }
+
+      square(w) {
+        let A = w*w;
+        document.write("Square Area is " + A);
+      }
+
+      rectangle(l,b){
+        let A = l*b;
+        document.write("Rectangle Area is " + A);
+      }
+
+      triangle(base,h){
+        let A = base*h;
+        document.write("Triangle Area is " + A);
+      }
+    }
+
+    class MyClass extends Area{
+
+    circle(){
+      let input = prompt("Enter radius of circle");
+      let r = parseInt(input);
+      return r;
+    }
+
+    square(){
+      let input = prompt("Enter width of square");
+      let w = parseInt(input);
+      return w;
+    }
+
+    rectangle(){
+      let inputLength = prompt("Enter length of Rectangle");
+      let inputBreadth = prompt("Enter breadth of Rectangle");
+      let l = parseInt(inputLength);
+      let b = parseInt(inputBreadth);
+      return [l,b];
+    }
+
+    triangle(){
+      let inputBase = prompt("Enter base of Triangle");
+      let inputHeight = prompt("Enter height of Triangle");
+      let base = parseInt(inputBase);
+      let h = parseInt(inputHeight);
+      return [base,h];
+    }
+
+    constructor (choice){
+      super();
+      switch (choice){
+        case 1:
+          let r = (this.circle());
+          super.circle(r);
+          break;
+        case 2:
+          let w = (this.square());
+          super.square(w);
+          break;
+        case 3:
+          const [l,b] = (this.rectangle());
+          super.rectangle(l,b);
+          break;
+        case 4:
+          const [base,h] = (this.triangle());
+          super.triangle(base,h);
+          break;
+        default:
+          document.write("Invalid Entry");    
+      }  
+
+    }
+    }
+    let num = prompt("Enter your choice  1 for Circle  2 for Square  3 for Rectangle  4 for Triangle");
+    let choice = parseInt(num);
+
+    const object = new MyClass(choice);
+
+  </script>
+  
+</body>
+</html>

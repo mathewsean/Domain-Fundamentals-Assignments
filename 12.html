@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 12</title>
+</head>
+<body>
+  <script>
+    let limit=prompt("Enter the limit of Array");
+    let a = [];
+    let temp;
+
+    for(let i=0;i<limit;i++){
+      a[i] = prompt("Enter value of array");
+    }
+
+    for(let i=0;i<limit-1;i++){
+      for(let j=i+1;j<=limit;j++){
+        if(a[i]<a[j]){
+          temp=a[i];
+          a[i]=a[j];
+          a[j]=temp;
+          
+        }
+      }
+    }
+    document.write("Sorted array is:  ")
+
+    for(let i=0;i<limit;i++){
+      document.write(a[i]," ");
+    }
+
+
+
+
+
+
+  </script>
+</body>
+</html>

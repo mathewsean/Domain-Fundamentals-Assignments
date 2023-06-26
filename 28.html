@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 28</title>
+</head>
+<body>
+  <script>
+
+    function car(car_name,car_mileage,car_max_speed){
+      this.name = car_name;
+      this.mileage = car_mileage;
+      this.max_speed = car_max_speed;
+    }
+
+    const mycar = new car("Swift","20","150")
+
+    document.write("My car name is " + mycar.name + " , Mileage is " + mycar.mileage + " and Maximum Speed " + mycar.max_speed)
+
+  </script>  
+</body>
+</html>
